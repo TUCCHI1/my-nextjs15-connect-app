@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "generate": "protoc --es_out=src/generated --es_opt=target=ts --connect-es_out=src/generated --connect-es_opt=target=ts proto/example.proto"
+  },
   "dependencies": {
     "@bufbuild/protobuf": "^2.2.3",
     "@connectrpc/connect": "^2.0.2",
